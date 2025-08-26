@@ -23,3 +23,8 @@
 .barra-menu li a:hover {
   background: #9bc446; 
 }
+
+
+.card{
+  display:flex;
+}
