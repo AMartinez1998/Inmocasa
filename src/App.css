@@ -25,6 +25,140 @@
 }
 
 
-.card{
-  display:flex;
+.card {
+  display: flex;
+  align-items: stretch; 
+  justify-content: space-between;
+  gap: 20px;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  background: #fff;
+  max-width: 70%;
+  margin: 90px auto;
+  height: 50vh; 
+}
+
+.card-text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.card-text h1 {
+  margin: 0;
+  color: #508430;
+  
+}
+
+.card-text p {
+  margin: 0;
+  font-size: 1.65rem; 
+  line-height: 2.1;
+  
+}
+
+.card-imagen {
+  flex: 1;
+  display: flex;
+  align-items: flex-start; 
+  justify-content: center;
+}
+
+.card-imagen img {
+  max-width: 100%;
+  height: 100%;
+  border-radius: 12px;
+}
+
+
+
+
+
+
+@media (max-width: 720px) {
+  
+
+  .barra-menu {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+  }
+
+  .barra-menu.activo {
+    display: flex;
+  }
+
+  .barra-menu li {
+    width: 100%;
+    text-align: center;
+  }
+
+  .barra-menu li a {
+    width: 100%;
+    font-size: 16px;
+    padding: 12px;
+    display: block;
+    text-decoration: none;
+    color: #333;
+    transition: 0.3s, color 0.3s;
+  }
+
+  .barra-menu li a:hover {
+    background-color: #f0f0f0;
+    color: #508430;
+  }
+
+  /* Card responsive */
+  .card {
+    flex-direction: column;
+    max-width: 90%;
+    height: auto;
+    text-align: center;
+    margin: 20px auto; /* menos margen arriba y abajo */
+    gap: 15px;
+  }
+
+  .card-text {
+    align-items: center;
+  }
+
+  .card-imagen {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .card-imagen img {
+    height: auto;
+    max-width: 100%;
+  }
+
+  .card-text p {
+    font-size: 1.2rem;
+  }
+
+  .card-text h1 {
+    font-size: 1.5rem;
+  }
+    .boton-menu {
+    display: block;
+    margin: 10px auto; /* centrado */
+    font-size: 24px;
+    background-color: #508430; /* verde principal */
+    color: #fff;
+    border: 2px solid #3e6c25; /* borde más oscuro */
+    padding: 10px 20px;
+    border-radius: 12px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+  }
+
+  .boton-menu:hover {
+    background-color: #3e6c25; /* verde más oscuro */
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.25);
+  }
 }

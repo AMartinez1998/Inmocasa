@@ -6,7 +6,7 @@ export default function Card({titulo,parrafo,imagen,alt}){
         <p>{parrafo}</p>
       </div>
 
-      <div className="card-image">
+      <div className="card-imagen">
         <img src={imagen} alt={alt} />
       </div>
     </div>
