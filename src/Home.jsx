@@ -1,4 +1,5 @@
 import Card from './Card'
+import Call from './Call-card'
 export default function Home(){
 return(
     <>
@@ -28,7 +29,24 @@ return(
     alt="llave"
     />
 
+    <div className='contenedor-calls'>
+    <Call
+    title="¿Buscando para comprar?"
+    text="Aquí tienes nuestras mejores casas,listas para ti y tu familia.Aquí podrás ver todas las casas que tenemos en
+    cartera que sin duda no te dejarán indiferente"
+    textlink="Ir a Comprar"
+    tolink="/Comprar"
+    />
 
+    <Call
+    title="¿Buscando para Alquilar?"
+    text="Aquí tienes nuestras mejores casas,listas para ti y tu familia.Aquí podrás ver todas las casas que tenemos en
+    cartera que sin duda no te dejarán indiferente"
+    textlink="Ir a Alquilar"
+    tolink="/Alquilar"
+    />
+    </div>
+   
     </>
 )
 }
