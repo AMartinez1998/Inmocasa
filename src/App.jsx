@@ -6,6 +6,7 @@ import './App.css'
 import Navegador from './Navegacion'
 import Home from './Home'
 import Footer from './Close'
+import Comprar from './Comprar'
 
 
 
@@ -16,7 +17,7 @@ function App() {
 <Routes>
   <Route path="/" element={<Home/>}/>
   <Route path="/Home" element={<Home/>}/>
-  <Route path="/Comprar" element={<h1>adios</h1>}   />
+  <Route path="/Comprar" element={<Comprar/>}/>
   <Route path= "/Alquilar" element={<h1>puede ser</h1>}/>
 </Routes>
 
