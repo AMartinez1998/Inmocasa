@@ -199,6 +199,79 @@ iframe{
 
 
 
+/* ======== Botón Filtrar principal ======== */
+button {
+  display: block;               /* para poder centrarlo con margin auto */
+  margin: 20px auto 10px auto; /* 20px arriba, centrado, 10px abajo */
+  background-color: #28a745;    /* verde */
+  color: #fff;
+  border: none;
+  padding: 15px 30px;           /* más grande */
+  border-radius: 12px;          /* más redondeado */
+  cursor: pointer;
+  font-size: 18px;              /* fuente más grande */
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+  background-color: #218838;    /* verde más oscuro al hover */
+  transform: scale(1.05);
+}
+
+/* ======== Bloque de filtros ======== */
+.filtros {
+  background-color: #e6f4ea; /* verde muy suave */
+  padding: 15px 20px;
+  border-radius: 12px;
+  margin: 20px 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+/* ======== Cada sección dentro de filtros ======== */
+.filtros div {
+  display: flex;
+  flex-direction: column;
+}
+
+/* ======== Inputs de filtro ======== */
+.filtros input[type="number"] {
+  padding: 8px 10px;
+  border-radius: 8px;
+  border: 1px solid #28a745;
+  width: 150px;
+  font-size: 14px;
+  transition: border-color 0.3s;
+}
+
+.filtros input[type="number"]:focus {
+  outline: none;
+  border-color: #218838; /* verde oscuro en focus */
+}
+
+/* ======== Títulos de filtros ======== */
+.filtros h3 {
+  margin-bottom: 8px;
+  color: #28a745;
+  font-size: 16px;
+}
+
+/* ======== Responsive para móviles ======== */
+@media (max-width: 600px) {
+  .filtros {
+    flex-direction: column;
+  }
+
+  .filtros input[type="number"] {
+    width: 100%;
+  }
+}
+
+
+
+
 
 @media (max-width: 720px) {
   
@@ -346,11 +419,28 @@ iframe{
 
   .tarjeta-casa .enlace {
     padding: 15px;
-    max-width: 100%;       /* botón más ancho */
+    max-width: 90%;       /* botón más ancho */
   }
 
   .tarjeta-casa .enlace a {
     font-size: 18px;       
+  }
+
+   .filtros {
+    flex-direction: column;
+    gap: 15px;
+    padding: 15px;
+  }
+
+  .filtros input[type="number"] {
+    width: 90%;
+  }
+
+  /* Botón Filtrar más ancho en móvil */
+  button {
+    width: 90%;
+    font-size: 20px;
+    padding: 18px 0;
   }
   
 }
