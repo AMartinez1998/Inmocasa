@@ -36,7 +36,8 @@
   background: #fff;
   max-width: 70%;
   margin: 90px auto;
-  height: 50vh; 
+  height: auto; /* Cambiado de 50vh a auto para que se adapte al contenido */
+  min-height: 50vh; /* Opcional: mantener altura mínima si quieres */
 }
 
 .card-text {
@@ -49,14 +50,12 @@
 .card-text h1 {
   margin: 0;
   color: #508430;
-  
 }
 
 .card-text p {
   margin: 0;
   font-size: 1.65rem; 
   line-height: 2.1;
-  
 }
 
 .card-imagen {
@@ -71,6 +70,7 @@
   height: 100%;
   border-radius: 12px;
 }
+
 
 .big-card{
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
