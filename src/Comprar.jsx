@@ -4,10 +4,10 @@ import Tarjeta from "./Casa-compra";
 export default function Comprar() {
   const casas = [
     { id: 1, imagen: "casa1.png", habitaciones: 3, precio: 150000 },
-    { id: 2, imagen: "casa1.png", habitaciones: 2, precio: 120000 },
-    { id: 3, imagen: "casa1.png", habitaciones: 4, precio: 200000 },
-    { id: 4, imagen: "casa1.png", habitaciones: 1, precio: 90000 },
-    { id: 5, imagen: "casa1.png", habitaciones: 5, precio: 250000 },
+    { id: 2, imagen: "casa2.jpg", habitaciones: 2, precio: 120000 },
+    { id: 3, imagen: "casa3.jpg", habitaciones: 4, precio: 200000 },
+    { id: 4, imagen: "casa4.jpg", habitaciones: 1, precio: 90000 },
+    { id: 5, imagen: "casa5.png", habitaciones: 5, precio: 250000 },
   ];
 
   const [filtroHabitaciones, setFiltroHabitaciones] = useState(null);

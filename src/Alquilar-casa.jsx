@@ -3,11 +3,11 @@ import Tarjeta from "./Casa-compra";
 
 export default function Alquilar() {
   const casas = [
-    { id: 1, imagen: "casa1.png", habitaciones: 3, precio: 1200 },
-    { id: 2, imagen: "casa1.png", habitaciones: 2, precio: 900 },
-    { id: 3, imagen: "casa1.png", habitaciones: 4, precio: 1800 },
-    { id: 4, imagen: "casa1.png", habitaciones: 1, precio: 700 },
-    { id: 5, imagen: "casa1.png", habitaciones: 5, precio: 2500 },
+    { id: 1, imagen: "casa6.jpg", habitaciones: 3, precio: 1200 },
+    { id: 2, imagen: "casa7.jpg", habitaciones: 2, precio: 900 },
+    { id: 3, imagen: "casa8.jpg", habitaciones: 4, precio: 1800 },
+    { id: 4, imagen: "casa9.jpg", habitaciones: 1, precio: 700 },
+    { id: 5, imagen: "casa10.jpg", habitaciones: 5, precio: 2500 },
   ];
 
   const [filtroHabitaciones, setFiltroHabitaciones] = useState(null);
