@@ -258,6 +258,58 @@ button:hover {
   font-size: 16px;
 }
 
+
+.form-reservas {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  width: 40%;              /* Más estrecho */
+  margin: 150px auto;      /* Baja el bloque */
+  padding: 100px 40px;     /* Estirado hacia abajo */
+  background: #f8fff8;     /* Verde muy suave */
+  border-radius: 20px;
+  box-shadow: 0 6px 25px rgba(0,0,0,0.15);
+  min-height: 300px;      /* 👈 Mucho más largo */
+}
+
+/* Inputs */
+.form-reservas input {
+  padding: 25px;
+  font-size: 26px;
+  border: 3px solid #28a745;
+  border-radius: 15px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.form-reservas input:focus {
+  border-color: #218838;
+}
+
+/* Botón grande */
+.botoncete {
+  margin-top: 50px;
+  padding: 25px 50px;
+  background-color: #28a745;
+  color: white;
+  font-size: 28px;
+  font-weight: bold;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  align-self: center;
+  width: 80%;
+}
+
+.botoncete:hover {
+  background-color: #67f586;
+  
+}
+
+.botoncete:active {
+  transform: scale(0.98);
+}
 /* ======== Responsive para móviles ======== */
 @media (max-width: 600px) {
   .filtros {
@@ -441,6 +493,35 @@ button:hover {
     width: 90%;
     font-size: 20px;
     padding: 18px 0;
+  }
+
+
+  .form-reservas {
+    width: 80%;            /* más estrecho para móvil */
+    min-height: 1000px;    /* más largo en vertical */
+    margin: 100px auto;    /* lo baja un poco */
+    padding: 80px 30px;    /* más espacio interno */
+  }
+
+  .form-reservas input {
+    width: 100%;           /* que ocupen todo el ancho */
+    font-size: 22px;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+
+  .btn-reservar {
+    font-size: 24px;
+    padding: 20px 40px;
+    width: 100%;           /* botón grande que ocupe todo */
+  }
+  .btn-reservar:hover {
+    background-color: #6df88b;
+    transform: scale(1.05);
+  }
+
+  .btn-reservar:active {
+    transform: scale(0.98);
   }
   
 }

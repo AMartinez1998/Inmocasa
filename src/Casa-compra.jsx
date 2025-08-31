@@ -8,7 +8,7 @@ export default function Tarjeta({imagen,habitaciones,precio}){
         <p>{precio}</p>
         
         <div className='enlace'>
-            <Link to="/Reservar">Reservar visita</Link>
+            <Link to="/Reservas">Reservar visita</Link>
             </div>
         </article>
         </>

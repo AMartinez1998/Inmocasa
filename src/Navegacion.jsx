@@ -22,8 +22,7 @@ export default function Navegacion() {
         <li><Link to="/Home">Home</Link></li>
         <li><Link to="/Comprar">Comprar</Link></li>
         <li><Link to="/Alquilar">Alquilar</Link></li>
-        <li><Link to="/Reservar">Reservar Cita</Link></li>
-        <li><Link to="/Prestamos">Prestamos</Link></li>
+        <li><Link to="/Reservas">Reservar Cita</Link></li>
       </ul>
     </nav>
   );

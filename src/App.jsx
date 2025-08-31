@@ -8,6 +8,7 @@ import Home from './Home'
 import Footer from './Close'
 import Comprar from './Comprar'
 import Alquilar from './Alquilar-casa'
+import Reservas from './Reservas'
 
 
 
@@ -20,6 +21,7 @@ function App() {
   <Route path="/Home" element={<Home/>}/>
   <Route path="/Comprar" element={<Comprar/>}/>
   <Route path= "/Alquilar" element={<Alquilar/>}/>
+  <Route path= "/Reservas" element={<Reservas/>}/>
 </Routes>
 
 <Footer
