@@ -36,8 +36,8 @@
   background: #fff;
   max-width: 70%;
   margin: 90px auto;
-  height: auto; /* Cambiado de 50vh a auto para que se adapte al contenido */
-  min-height: 50vh; /* Opcional: mantener altura mínima si quieres */
+  height: auto; 
+  min-height: 50vh; 
 }
 
 .card-text {
@@ -150,8 +150,8 @@ iframe{
 .tarjeta-casa {
   background: #fff;
   border-radius: 12px;
-  box-shadow: 0 6px 16px rgba(0,0,0,0.15); /* sombra un poco más grande */
-  width: 480px;          /* más ancho */   
+  box-shadow: 0 6px 16px rgba(0,0,0,0.15); 
+  width: 480px;            
   padding: 35px;         
   text-align: center;
   display: flex;
@@ -162,13 +162,13 @@ iframe{
 
 .tarjeta-casa img {
   width: 100%;
-  height: 320px;         /* más alto */
+  height: 320px;         
   object-fit: cover;
   border-radius: 12px;
 }
 
 .tarjeta-casa p {
-  font-size: 22px;       /* más grande */
+  font-size: 22px;       
   color: #333;
   margin: 12px 0;
 }
@@ -201,7 +201,7 @@ iframe{
 
 /* ======== Botón Filtrar principal ======== */
 button {
-  display: block;               /* para poder centrarlo con margin auto */
+  display: block;               
   margin: 20px auto 10px auto; /* 20px arriba, centrado, 10px abajo */
   background-color: #28a745;    /* verde */
   color: #fff;
